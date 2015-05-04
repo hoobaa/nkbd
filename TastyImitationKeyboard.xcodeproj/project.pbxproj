@@ -208,23 +208,15 @@
 		4E807D9519461D9000D875D1 /* hostingapp */ = {
 			isa = PBXGroup;
 			children = (
+				4EF16F9019D254E00076AFCB /* Background.jpg */,
+				4EF16F9219D254EA0076AFCB /* Info.plist */,
 				4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */,
 				4EF16F9519D255030076AFCB /* ViewController.swift */,
 				4EF16F9D19D2552E0076AFCB /* Main.storyboard */,
 				4EF16F9319D255030076AFCB /* Images.xcassets */,
-				4E807D9619461D9000D875D1 /* Supporting Files */,
 			);
 			name = hostingapp;
 			path = HostingApp;
-			sourceTree = "<group>";
-		};
-		4E807D9619461D9000D875D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4EF16F9019D254E00076AFCB /* Background.jpg */,
-				4EF16F9219D254EA0076AFCB /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4E807DBA19461DC700D875D1 /* Keyboard */ = {
