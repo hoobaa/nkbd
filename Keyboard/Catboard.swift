@@ -13,14 +13,14 @@ This is the demo keyboard. If you're implementing your own keyboard, simply foll
 set the name of your KeyboardViewController subclass in the Info.plist file.
 */
 
-let kCatTypeEnabled = "kCatTypeEnabled"
+// let kCatTypeEnabled = "kCatTypeEnabled"
 
 class Catboard: KeyboardViewController {
     
     let takeDebugScreenshot: Bool = false
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        NSUserDefaults.standardUserDefaults().registerDefaults([kCatTypeEnabled: true])
+        // NSUserDefaults.standardUserDefaults().registerDefaults([kCatTypeEnabled: true])
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
@@ -32,10 +32,10 @@ class Catboard: KeyboardViewController {
         if let textDocumentProxy = self.textDocumentProxy as? UITextDocumentProxy {
             let keyOutput = key.outputForCase(self.shiftState.uppercase())
             
-            if !NSUserDefaults.standardUserDefaults().boolForKey(kCatTypeEnabled) {
-                textDocumentProxy.insertText(keyOutput)
-                return
-            }
+            // if !NSUserDefaults.standardUserDefaults().boolForKey(kCatTypeEnabled) {
+            //     textDocumentProxy.insertText(keyOutput)
+            //     return
+            // }
             
             if key.type == .Character || key.type == .SpecialCharacter {
                 let context = textDocumentProxy.documentContextBeforeInput
@@ -63,13 +63,11 @@ class Catboard: KeyboardViewController {
                     textDocumentProxy.insertText(" ")
                     textDocumentProxy.insertText(keyOutput)
                     return
-                }
-                else {
+                } else {
                     textDocumentProxy.insertText(keyOutput)
                     return
                 }
-            }
-            else {
+            } else {
                 textDocumentProxy.insertText(keyOutput)
                 return
             }
@@ -97,7 +95,8 @@ class Catboard: KeyboardViewController {
     }
     
     override func createBanner() -> ExtraView? {
-        return CatboardBanner(globalColors: self.dynamicType.globalColors, darkMode: false, solidColorMode: self.solidColorMode())
+        //return CatboardBanner(globalColors: self.dynamicType.globalColors, darkMode: false, solidColorMode: self.solidColorMode())
+        return nil
     }
     
     func takeScreenshotDelay() {

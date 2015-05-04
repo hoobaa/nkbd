@@ -14,7 +14,6 @@ with something (or leave it blank if you like.)
 */
 
 class CatboardBanner: ExtraView {
-    
     var catSwitch: UISwitch = UISwitch()
     var catLabel: UILabel = UILabel()
     

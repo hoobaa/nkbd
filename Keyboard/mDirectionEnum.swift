@@ -1,30 +1,21 @@
-//
-//  Direction.swift
-//  TransliteratingKeyboard
-//
-//  Created by Alexei Baboulevitch on 7/19/14.
-//  Copyright (c) 2014 Apple. All rights reserved.
-//
-
 enum Direction: Int, Printable {
     case Left = 0
     case Down = 3
     case Right = 2
     case Up = 1
-    
     var description: String {
-    get {
-        switch self {
-        case Left:
-            return "Left"
-        case Right:
-            return "Right"
-        case Up:
-            return "Up"
-        case Down:
-            return "Down"
+        get {
+            switch self {
+            case Left:
+                return "Left"
+            case Right:
+                return "Right"
+            case Up:
+                return "Up"
+            case Down:
+                return "Down"
+            }
         }
-    }
     }
     
     func clockwise() -> Direction {
@@ -65,15 +56,15 @@ enum Direction: Int, Printable {
             return Up
         }
     }
-    
-    func horizontal() -> Bool {
-        switch self {
-        case
-        Left,
-        Right:
-            return true
-        default:
-            return false
-        }
-    }
+    // 
+    // func horizontal() -> Bool {
+    //     switch self {
+    //     case
+    //         Left,
+    //         Right:
+    //         return true
+    //     default:
+    //         return false
+    //     }
+    // }
 }
