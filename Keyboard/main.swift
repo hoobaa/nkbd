@@ -15,7 +15,7 @@ set the name of your KeyboardViewController subclass in the Info.plist file.
 
 // let kCatTypeEnabled = "kCatTypeEnabled"
 
-class Catboard: KeyboardViewController {
+class nkbd: KeyboardViewController {
     
     // let takeDebugScreenshot: Bool = false
     

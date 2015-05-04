@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EDAAE3F1AF77D8B00AA785F /* Catboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAAE3D1AF77D8B00AA785F /* Catboard.swift */; };
+		1EDAAE3F1AF77D8B00AA785F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAAE3D1AF77D8B00AA785F /* main.swift */; };
 		4E00A6E5197183EE009414F2 /* vKeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E807DC81946209600D875D1 /* vKeyboardKey.swift */; };
 		4E3B5A941A0654A8003366F6 /* cKeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B5A931A0654A8003366F6 /* cKeyboardInputTraits.swift */; };
 		4E52A6D21A06A61F006A08CE /* vImageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52A6D11A06A61F006A08CE /* vImageKey.swift */; };
@@ -93,7 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1EDAAE3D1AF77D8B00AA785F /* Catboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catboard.swift; sourceTree = "<group>"; };
+		1EDAAE3D1AF77D8B00AA785F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4E3B5A931A0654A8003366F6 /* cKeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cKeyboardInputTraits.swift; sourceTree = "<group>"; };
 		4E52A6D11A06A61F006A08CE /* vImageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vImageKey.swift; sourceTree = "<group>"; };
 		4E52A6D31A06A626006A08CE /* vExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vExtraView.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		4E807D8A19461D9000D875D1 = {
 			isa = PBXGroup;
 			children = (
-				4E807D9519461D9000D875D1 /* HostingApp */,
+				4E807D9519461D9000D875D1 /* hostingapp */,
 				4E807DBA19461DC700D875D1 /* Keyboard */,
 				4E807D9419461D9000D875D1 /* Products */,
 			);
@@ -205,7 +205,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E807D9519461D9000D875D1 /* HostingApp */ = {
+		4E807D9519461D9000D875D1 /* hostingapp */ = {
 			isa = PBXGroup;
 			children = (
 				4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */,
@@ -214,6 +214,7 @@
 				4EF16F9319D255030076AFCB /* Images.xcassets */,
 				4E807D9619461D9000D875D1 /* Supporting Files */,
 			);
+			name = hostingapp;
 			path = HostingApp;
 			sourceTree = "<group>";
 		};
@@ -229,7 +230,8 @@
 		4E807DBA19461DC700D875D1 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				1EDAAE3D1AF77D8B00AA785F /* Catboard.swift */,
+				4E807DBC19461DC700D875D1 /* Info.plist */,
+				1EDAAE3D1AF77D8B00AA785F /* main.swift */,
 				4E6AEE5219D2488B00931E8F /* Controller */,
 				4E6AEE5019D2486900931E8F /* Model */,
 				4E6AEE4F19D2484B00931E8F /* Views */,
@@ -243,7 +245,6 @@
 		4E807DBB19461DC700D875D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E807DBC19461DC700D875D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -419,7 +420,7 @@
 				4E60A13C1979FA8E00854CC8 /* vKeyboardConnector.swift in Sources */,
 				4E00A6E5197183EE009414F2 /* vKeyboardKey.swift in Sources */,
 				4EE7599B19F75A0D00B4E6ED /* Utilities.swift in Sources */,
-				1EDAAE3F1AF77D8B00AA785F /* Catboard.swift in Sources */,
+				1EDAAE3F1AF77D8B00AA785F /* main.swift in Sources */,
 				4EEFD78B19E0DF15004D4974 /* vShapes.swift in Sources */,
 				4ECBD90219F16DC7004FA2A3 /* mDefaultKeyboard.swift in Sources */,
 				4E3B5A941A0654A8003366F6 /* cKeyboardInputTraits.swift in Sources */,
