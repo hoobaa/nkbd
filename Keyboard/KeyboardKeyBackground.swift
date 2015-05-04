@@ -1,11 +1,3 @@
-//
-//  KeyboardKeyBackground.swift
-//  TransliteratingKeyboard
-//
-//  Created by Alexei Baboulevitch on 7/19/14.
-//  Copyright (c) 2014 Apple. All rights reserved.
-//
-
 import UIKit
 
 // This class does not actually draw its contents; rather, it generates bezier curves for others to use.

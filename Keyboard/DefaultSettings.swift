@@ -1,11 +1,3 @@
-//
-//  DefaultSettings.swift
-//  TastyImitationKeyboard
-//
-//  Created by Alexei Baboulevitch on 11/2/14.
-//  Copyright (c) 2014 Apple. All rights reserved.
-//
-
 import UIKit
 
 class DefaultSettings: ExtraView, UITableViewDataSource, UITableViewDelegate {
@@ -48,7 +40,7 @@ class DefaultSettings: ExtraView, UITableViewDataSource, UITableViewDelegate {
             ]
         }
     }
-    var settingsNotes: [String: String] {
+    var settingsNotes: [String:String] {
         get {
             return [
                 kKeyboardClicks: "Please note that keyboard clicks will work only if “Allow Full Access” is enabled in the keyboard settings. Unfortunately, this is a limitation of the operating system.",
@@ -268,8 +260,7 @@ class DefaultSettingsTableViewCell: UITableViewCell {
             self.cellConstraints += [switchSide, switchTop, labelSide, labelCenter, left, right, top, bottom]
             
             self.constraintsSetForLongLabel = true
-        }
-        else {
+        } else {
             let switchSide = NSLayoutConstraint(item: sw, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Right, multiplier: 1, constant: -sideMargin)
             let switchTop = NSLayoutConstraint(item: sw, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: margin)
             let switchBottom = NSLayoutConstraint(item: sw, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: -margin)

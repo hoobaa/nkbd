@@ -43,51 +43,23 @@ func defaultKeyboard() -> Keyboard {
         defaultKeyboard.addKey(keyModel, row: 3, page: 0)
     }
     ////
+    var keyModeChangeNumbers = Key(.ModeChange)
+    keyModeChangeNumbers.uppercaseKeyCap = "123"
+    keyModeChangeNumbers.toMode = 1
+    defaultKeyboard.addKey(keyModeChangeNumbers, row: 4, page: 0)
+
     var keyboardChange = Key(.KeyboardChange)
     defaultKeyboard.addKey(keyboardChange, row: 4, page: 0)
-    
-    var settings = Key(.Settings)
-    defaultKeyboard.addKey(settings, row: 4, page: 0)
     
     var space = Key(.Space)
     space.uppercaseKeyCap = "space"
     space.uppercaseOutput = " "
     space.lowercaseOutput = " "
     defaultKeyboard.addKey(space, row: 4, page: 0)
+
+    var settings = Key(.Settings)
+    defaultKeyboard.addKey(settings, row: 4, page: 0)
     
-    // var backspace = Key(.Backspace)
-    // defaultKeyboard.addKey(backspace, row: 2, page: 0)
-    // 
-    var keyModeChangeNumbers = Key(.ModeChange)
-    keyModeChangeNumbers.uppercaseKeyCap = "123"
-    keyModeChangeNumbers.toMode = 1
-    defaultKeyboard.addKey(keyModeChangeNumbers, row: 4, page: 0)
-    // 
-    // var keyboardChange = Key(.KeyboardChange)
-    // defaultKeyboard.addKey(keyboardChange, row: 3, page: 0)
-    // 
-    // var settings = Key(.Settings)
-    // defaultKeyboard.addKey(settings, row: 3, page: 0)
-    // 
-    // var space = Key(.Space)
-    // space.uppercaseKeyCap = "space"
-    // space.uppercaseOutput = " "
-    // space.lowercaseOutput = " "
-    // defaultKeyboard.addKey(space, row: 3, page: 0)
-    // 
-    // var returnKey = Key(.Return)
-    // returnKey.uppercaseKeyCap = "return"
-    // returnKey.uppercaseOutput = "\n"
-    // returnKey.lowercaseOutput = "\n"
-    // defaultKeyboard.addKey(returnKey, row: 3, page: 0)
-
-
-    // for key in ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"] {
-    //     var keyModel = Key(.Character)
-    //     keyModel.setLetter(key)
-    //     defaultKeyboard.addKey(keyModel, row: 4, page: 0)
-    // }
-
     //////////////////////////////
     for key in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"] {
         var keyModel = Key(.SpecialCharacter)
