@@ -17,7 +17,7 @@ set the name of your KeyboardViewController subclass in the Info.plist file.
 
 class Catboard: KeyboardViewController {
     
-    let takeDebugScreenshot: Bool = false
+    // let takeDebugScreenshot: Bool = false
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         // NSUserDefaults.standardUserDefaults().registerDefaults([kCatTypeEnabled: true])
@@ -77,21 +77,21 @@ class Catboard: KeyboardViewController {
     override func setupKeys() {
         super.setupKeys()
         
-        if takeDebugScreenshot {
-            if self.layout == nil {
-                return
-            }
-            
-            for page in keyboard.pages {
-                for rowKeys in page.rows {
-                    for key in rowKeys {
-                        if let keyView = self.layout!.viewForKey(key) {
-                            keyView.addTarget(self, action: "takeScreenshotDelay", forControlEvents: .TouchDown)
-                        }
-                    }
-                }
-            }
-        }
+        // if takeDebugScreenshot {
+        //     if self.layout == nil {
+        //         return
+        //     }
+        //     
+        //     for page in keyboard.pages {
+        //         for rowKeys in page.rows {
+        //             for key in rowKeys {
+        //                 if let keyView = self.layout!.viewForKey(key) {
+        //                     keyView.addTarget(self, action: "takeScreenshotDelay", forControlEvents: .TouchDown)
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
     
     override func createBanner() -> ExtraView? {
